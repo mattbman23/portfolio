@@ -59,7 +59,7 @@
       "date": "Feb 1 2023",
       "title": "My Blog",
       "githubUrl": "https://github.com/mattbman23/personal_blog",
-      "desc": "Containerized Blogw website",
+      "desc": "Containerized Blog website",
       "tags": ["NextJs", "Tailwind"]
     }
   ]
