@@ -1,0 +1,59 @@
+{
+  "socials": [
+    {
+      "title": "YouTube",
+      "name": "Mr Budiman",
+      "url": "https://www.youtube.com/channel/UCxXdfk-udlBrLJji8nBipMg"
+    },
+    {
+      "title": "Linkedin",
+      "name": "matthewbudiman",
+      "url": "https://www.linkedin.com/in/matthewbudiman"
+    },
+    {
+      "title": "GitHub",
+      "name": "mattbman23",
+      "url": "https://github.com/mattBman23"
+    }
+  ],
+  "skills": [
+    "nodejs",
+    "java",
+    "C#",
+    "GO",
+    "php",
+    "python",
+    "JS/TS",
+    "flutter",
+    "react-native",
+    "linux",
+    "OpenShift",
+    "docker",
+    "kubernetes",
+    "cloud",
+    "microservices",
+    "NextJS",
+    "mysql",
+    "mongo",
+    "redis",
+    "mqtt",
+    "expressJS",
+    "networking",
+    "AWS",
+    "ECH",
+    "CCNA",
+    "modernisation",
+    "SCRUM",
+    "threejs",
+    "ETC..."
+  ],
+  "projects": [
+    {
+      "date": "Jun 13 2022",
+      "title": "Matthew's Portfolio",
+      "githubUrl": "https://github.com/mattbman23/meresume",
+      "desc": "Containerized Personal Portfolio using NextJs with Tailwind",
+      "tags": ["NextJs", "Tailwind"]
+    }
+  ]
+}
