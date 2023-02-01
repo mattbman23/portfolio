@@ -1,0 +1,17 @@
+name: Revalidate Portfolio Website
+
+on:
+  workflow_dispatch:
+    inputs:
+      webDomain:
+        description: "Website to revalidate"
+        required: true
+        default: "https://mbudiman.com"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps: 
+    - name: Trigger revalidation
+      run: curl ${{ inputs.webDomain }}/api/revalidate?secret=${{ secrets.REVALIDATE_TOKEN }}
