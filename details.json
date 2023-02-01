@@ -49,10 +49,17 @@
   ],
   "projects": [
     {
-      "date": "Jun 13 2022",
-      "title": "Matthew's Portfolio",
-      "githubUrl": "https://github.com/mattbman23/meresume",
-      "desc": "Containerized Personal Portfolio using NextJs with Tailwind",
+      "date": "Feb 1 2023",
+      "title": "My Portfolio",
+      "githubUrl": "https://github.com/mattbman23/portfolio",
+      "desc": "Containerized Portfolio",
+      "tags": ["NextJs", "Tailwind"]
+    },
+    {
+      "date": "Feb 1 2023",
+      "title": "My Blog",
+      "githubUrl": "https://github.com/mattbman23/personal_blog",
+      "desc": "Containerized Portfolio",
       "tags": ["NextJs", "Tailwind"]
     }
   ]
