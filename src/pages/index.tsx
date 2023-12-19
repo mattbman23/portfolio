@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export async function getStaticProps() {
-  const res = await fetch(process.env.GITHUB_URL);
+  const res = await fetch(process.env.GITHUB_URL!);
   const portfolioDetails = await res.json();
 
   return {
