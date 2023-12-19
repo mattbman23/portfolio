@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import { PortfolioProject, PortfolioSocial } from "@/types";
 import { NavigationStore } from "@/store/NavigationStore";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
@@ -10,10 +8,11 @@ import { Portfolio } from "@/components/Portfolio";
 import { Projects } from "@/components/Projects";
 import { Footer } from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export async function getStaticProps() {
-  const res = await fetch(process.env.GITHUB_URL!);
+  const res = await fetch(
+    process.env.GITHUB_URL! ||
+      "https://raw.githubusercontent.com/mattbman23/portfolio/master/details.json"
+  );
   const portfolioDetails = await res.json();
 
   return {
