@@ -1,15 +1,19 @@
-import { Footer } from "@/components/Footer";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import { PortfolioProject, PortfolioSocial } from "@/types";
+import { NavigationStore } from "@/store/NavigationStore";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
+import Head from "next/head";
+import { Profile } from "@/components/Profile";
 import { Header } from "@/components/Header";
 import { Portfolio } from "@/components/Portfolio";
-import { Profile } from "@/components/Profile";
 import { Projects } from "@/components/Projects";
-import { NavigationStore } from "@/store/NavigationStore";
-import { PortfolioProject, PortfolioSocial } from "@/types";
-import Head from "next/head";
-import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { Footer } from "@/components/Footer";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export async function getStaticProps() {
-  const res = await fetch(process.env.GITHUB_URL!);
+  const res = await fetch(process.env.GITHUB_URL);
   const portfolioDetails = await res.json();
 
   return {
@@ -49,7 +53,6 @@ export default function Home({
           </div>
           <div className="xl:col-span-3 lg:col-span-2 p-7">
             <Header />
-
             <div ref={animationParent}>
               {curNav === "Resume" ? (
                 <Portfolio skills={skills} />
@@ -57,7 +60,6 @@ export default function Home({
                 <Projects portfolioProjects={projects} />
               )}
             </div>
-
             <Footer />
           </div>
         </div>
