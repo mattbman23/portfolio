@@ -27,7 +27,7 @@ export const Portfolio = ({ skills }: { skills: string[] }) => {
         <div className="m-2">
           <div className="flex items-center pb-3 gap-x-3">
             <div className="p-2 bg-green-400 rounded-full">
-              <BriefcaseIcon className="w-5 h-5 text-gray-600" />
+              <BriefcaseIcon className="w-5 h-5 text-black" />
             </div>
             <div className="text-xl font-semibold">Experience</div>
           </div>
@@ -58,7 +58,7 @@ export const Portfolio = ({ skills }: { skills: string[] }) => {
         <div className="m-2">
           <div className="flex items-center pb-3 gap-x-3">
             <div className="p-2 bg-green-400 rounded-full">
-              <AcademicCapIcon className="w-5 h-5 text-gray-600" />
+              <AcademicCapIcon className="w-5 h-5 text-black" />
             </div>
             <div className="text-xl font-semibold">Education</div>
           </div>

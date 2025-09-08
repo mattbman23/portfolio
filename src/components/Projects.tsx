@@ -46,10 +46,8 @@ export const Projects = ({
           >
             {project.title}
           </a>
-          <div className="text-justify max-h-36 overflow-scroll">
-            {project.desc}
-          </div>
-          <div className="flex flex-row gap-x-3 text-green-500 cursor-pointer">
+          <div className="text-justify max-h-36 ">{project.desc}</div>
+          <div className="flex flex-row gap-x-3 text-green-500 cursor-pointer overflow-hidden">
             {project.tags.map((tag) => (
               <div key={tag}>{tag}</div>
             ))}
