@@ -5,11 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-        <script
-          defer
-          src="https://umami.mbudiman.com/script.js"
-          data-website-id="bd6fdce4-b472-4003-a12f-0a6224c9f6a7"
-        ></script>
+     <script defer src="https://umami.mbudiman.com/script.js" data-website-id="0e8d5768-d85c-49c0-8314-798ad8fcb0ea"></script>
       </Head>
       <body>
         <Main />
